@@ -26,9 +26,9 @@ def main():
     while success:
         success,image = vidcap.read()
         dst = cv2.warpAffine(image, M, (rows,cols))
-        img270 = np.rot90(image)
-        img270 = np.rot90(img270)
-        img270 = np.rot90(img270)
+        img90 = np.rot90(image)
+        img180 = np.rot90(img90)
+        img270 = np.rot90(img180)
         #print('Read a frame %d: ' % count, success)
         if count%frequency==0:
             cv2.imwrite("%(file_name)s%(number)d.jpg" % {"file_name": pic_name, "number": count}, img270)    # save frame as JPEG file
