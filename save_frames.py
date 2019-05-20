@@ -31,7 +31,7 @@ def main():
         img270 = np.rot90(img180)
         #print('Read a frame %d: ' % count, success)
         if count%frequency==0:
-            cv2.imwrite("%(file_name)s%(number)d.jpg" % {"file_name": pic_name, "number": count}, img270)    # save frame as JPEG file
+            cv2.imwrite("%(file_name)s_%(number)d.jpg" % {"file_name": pic_name, "number": count}, img270)    # save frame as JPEG file
             print("Frame %(number)d was saved as %(file_name)s%(number)d.jpg!" % {"file_name": pic_name, "number": count})
         count += 1
 
