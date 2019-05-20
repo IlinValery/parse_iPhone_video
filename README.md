@@ -9,6 +9,14 @@
 ### Выходные параметры
 * Кадр
 
+### Настройка окружения
+```bash
+git clone https://github.com/IlinValery/parse_iPhone_video.git
+cd parse_iPhone_video
+python3 -m venv venv
+source venv/bin/activate
+pip install -r req.txt
+```
 ### Запуск скрипта 
 
 ```bash
